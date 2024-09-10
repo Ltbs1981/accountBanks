@@ -2,18 +2,21 @@ package model;
 
 public class Conta {
     private String nomeTitular;
-    private String agencia;
     private String numeroConta;
-    private String tipo;
+    private String tipoConta;
     private double saldo;
+    private String agencia;
 
-    public Conta(String nomeTitular, String agencia, String numeroConta, String tipo, double saldo) {
-        this.nomeTitular = nomeTitular;
-        this.agencia = agencia;
-        this.numeroConta = numeroConta;
-        this.tipo = tipo;
-        this.saldo = saldo;
+    public Conta(String nomeTitular, String numeroConta, String tipoConta, double saldo, String agencia) {
+        this.setNomeTitular(nomeTitular);
+        this.setNumeroConta(numeroConta);
+        this.setTipoConta(tipoConta);
+        this.setSaldo(saldo);
+        this.setAgencia(agencia);
     }
+
+    // Validações e Getters/Setters
+
     public String getNomeTitular() {
         return nomeTitular;
     }
@@ -68,5 +71,4 @@ public class Conta {
         }
         this.agencia = agencia;
     }
-
 }

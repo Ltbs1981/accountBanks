@@ -35,3 +35,4 @@ public class ContaDAO {
     public List<Conta> listarContas() {
         return contas;
     }
+}
